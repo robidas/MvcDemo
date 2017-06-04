@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li id="index-nav-item"><a href="/Home">Home</a></li>
+                    <li id="about-nav-item"><a href="/home/about">About</a></li>
+                    <li id="contacts-nav-item"><a href="/home/contacts">Contact</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>
+                <small>
+                    Code Demo Website, published May 2017. Copyright &copy; @DateTime.Now.ToString("yyyy")  Robi Das. All rights reserved. Use this code freely but display this copyright notice unaltered.
+                </small>
+            </p>
+            <p>
+                <small>
+                    This website is powered by ASP.Net Core 1.1
+                </small>
+            </p>
+        </footer>
+    </div><!-- /.container -->
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+            // Highlight the active navigation tab.
+            $(document).ready(function () {
+                var nav = '@ViewContext.RouteData.Values["action"]';
+                if (nav.toLowerCase() == "create") {
+                    nav = "contacts";
+                }
+                $("#" + nav.toLowerCase() + "-nav-item").addClass('active');
+            });
+    </script>
+
+    @RenderSection("Scripts", required: false);
+</body>
+</html>

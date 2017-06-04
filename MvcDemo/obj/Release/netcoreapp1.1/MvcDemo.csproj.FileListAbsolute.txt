@@ -1,0 +1,9 @@
+C:\Users\robd\documents\visual studio 2017\Projects\MvcDemo\MvcDemo\bin\Release\netcoreapp1.1\MvcDemo.deps.json
+C:\Users\robd\documents\visual studio 2017\Projects\MvcDemo\MvcDemo\bin\Release\netcoreapp1.1\MvcDemo.runtimeconfig.json
+C:\Users\robd\documents\visual studio 2017\Projects\MvcDemo\MvcDemo\bin\Release\netcoreapp1.1\MvcDemo.runtimeconfig.dev.json
+C:\Users\robd\documents\visual studio 2017\Projects\MvcDemo\MvcDemo\bin\Release\netcoreapp1.1\MvcDemo.dll
+C:\Users\robd\documents\visual studio 2017\Projects\MvcDemo\MvcDemo\bin\Release\netcoreapp1.1\MvcDemo.pdb
+C:\Users\robd\documents\visual studio 2017\Projects\MvcDemo\MvcDemo\obj\Release\netcoreapp1.1\MvcDemo.csprojResolveAssemblyReference.cache
+C:\Users\robd\documents\visual studio 2017\Projects\MvcDemo\MvcDemo\obj\Release\netcoreapp1.1\MvcDemo.AssemblyInfo.cs
+C:\Users\robd\documents\visual studio 2017\Projects\MvcDemo\MvcDemo\obj\Release\netcoreapp1.1\MvcDemo.dll
+C:\Users\robd\documents\visual studio 2017\Projects\MvcDemo\MvcDemo\obj\Release\netcoreapp1.1\MvcDemo.pdb
